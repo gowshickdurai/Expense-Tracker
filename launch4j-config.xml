@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+
+  <!-- Input fat JAR produced by Maven -->
+  <jar>target\expense-tracker-1.0-jar-with-dependencies.jar</jar>
+
+  <!-- Output EXE -->
+  <outfile>ExpenseTracker.exe</outfile>
+
+  <errTitle>Expense Tracker</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://adoptium.net/</downloadUrl>
+  <supportUrl></supportUrl>
+
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+
+  <manifest></manifest>
+
+  <!-- Optional: path to your .ico file (drop one named app.ico next to this XML) -->
+  <!-- <icon>app.ico</icon> -->
+
+  <jre>
+    <!-- Require Java 17 or newer -->
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>17</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>Expense Tracker</fileDescription>
+    <copyright>2026</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>Expense Tracker</productName>
+    <companyName></companyName>
+    <internalName>expense-tracker</internalName>
+    <originalFilename>ExpenseTracker.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>
